@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "e8ad44ee-7536-4901-913c-46e718d56d9f",
+		"_postman_id": "4e61a2b1-339c-42ca-9646-1c6a8c703153",
 		"name": "udacity-fsnd-udaspicelatte",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -33,10 +33,15 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{host}}/drinks",
+							"raw": "http://127.0.0.1:5000/drinks",
+							"protocol": "http",
 							"host": [
-								"{{host}}"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"drinks"
 							]
@@ -64,10 +69,15 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{host}}/drinks-detail",
+							"raw": "http://127.0.0.1:5000/drinks-detail",
+							"protocol": "http",
 							"host": [
-								"{{host}}"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"drinks-detail"
 							]
@@ -95,10 +105,15 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "{{host}}/drinks",
+							"raw": "http://127.0.0.1:5000/drinks",
+							"protocol": "http",
 							"host": [
-								"{{host}}"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"drinks"
 							]
@@ -126,10 +141,15 @@
 						"method": "PATCH",
 						"header": [],
 						"url": {
-							"raw": "{{host}}/drinks/1",
+							"raw": "http://127.0.0.1:5000/drinks/1",
+							"protocol": "http",
 							"host": [
-								"{{host}}"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"drinks",
 								"1"
@@ -158,10 +178,15 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{host}}/drinks/1",
+							"raw": "http://127.0.0.1:5000/drinks/1",
+							"protocol": "http",
 							"host": [
-								"{{host}}"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"drinks",
 								"1"
@@ -170,7 +195,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "barista",
@@ -200,10 +226,15 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{host}}/drinks",
+							"raw": "http://127.0.0.1:5000/drinks",
+							"protocol": "http",
 							"host": [
-								"{{host}}"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"drinks"
 							]
@@ -228,13 +259,28 @@
 						}
 					],
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlJ4MnRCdnd5T2ZNRUdnRVlwX3VoRSJ9.eyJpc3MiOiJodHRwczovL3NoYWxpbmktZnNuZC5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWU5YjJmMGI2M2Y4MDAwYzhjMjA1NDgzIiwiYXVkIjoiQ29mZmVlU2hvcEFwcCIsImlhdCI6MTU4NzQwODYxMiwiZXhwIjoxNTg3NDE1ODEyLCJhenAiOiJVcXM2ZGJKS3ZYenk3VnMzaW1VcFhzcnhoWmMzMUQ5MCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZ2V0OmRyaW5rcy1kZXRhaWwiXX0.EqBqOo43lZad78scVVWkXLJHar7zhHIyNuwT8eNh3OeVSn-ANS8VTcSvRkTA_XW-Y-l2kbFSkWcK3CIraWEx7k7MNTPL2Sh1vswpp2CJYLRV2gUWMNFAwfk5-x4x-dAIjl6nFqe6TDe2vBmJwuOOnHbgFSZoY8YNjD7XVzp5LwiI0bIO7KUAKUZKwO7xGDZ_zM_ePsfnvqrezmUTFe8-UgMQaAKwYD4W6YgRpbv-Y6Wn6veSG03MMHQMsxg97u_z_0bU6aPNydYKUfX6dQxPZTlSHJnhyv9JHI8rMBMzDk7qxnq84gZhYoSEP6mrE01BhoH3FXCVvWo3-HnlwXZwkw",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{host}}/drinks-detail",
+							"raw": "http://127.0.0.1:5000/drinks-detail",
+							"protocol": "http",
 							"host": [
-								"{{host}}"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"drinks-detail"
 							]
@@ -259,23 +305,22 @@
 						}
 					],
 					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik4wTkNOVEEzTWpaQ1FUa3lRMEl6TmtORk0wWXhRVFUwT1RFMFFVVkNSRUpDT1RBME1EUXpOUSJ9.eyJpc3MiOiJodHRwczovL3VkYWNpdHktZnNuZC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDY3MTQ4MTQ0MTcwNjk3MTI4OTMiLCJhdWQiOlsiZGV2IiwiaHR0cHM6Ly91ZGFjaXR5LWZzbmQuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTU2MDg5MDE2MCwiZXhwIjoxNTYwODk3MzYwLCJhenAiOiJPSjVwQk9ZSURFa09FVFVmUWo1ajdsSDZFTFcwMkd1MCIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6ZHJpbmtzIiwiZ2V0OmRyaW5rcy1kZXRhaWwiXX0.j9ocW47_exQOkEa10ffh8eijGvrIMxnGRzCmbrXnfaN_8ULsgA7AnWYMtvP8RmPWvT9n8sReWnFuJajUHBUbnBO2GuJ4aM3-WDUBeJT0X_mpGUWs4lxaNTbIkWdiWPTsEiRnP3wT-dU_v3Olw2PB4UMajMIjSH-IdF2Y1CiJIOaM0gV44RGZRyRvj6C2_mOkMfoXxzw-HrVvTRCo1NcUPea5Bs04POni7azx-B7FstP_HLm0dEbbge4XbmovHwlIXknIoI8PbuGXeLBqE2hv8fErKFBuIykxzK0nErH5zSPCrkM-_9smb8TLGAH-E5j1KQb6SHDKtcV_QHnsUYFuXA",
-									"type": "string"
-								}
-							]
-						},
 						"method": "POST",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"WaterX\",\n    \"recipe\": [{\n        \"name\": \"WaterX\",\n        \"color\": \"black\",\n        \"parts\": 1\n    }]\n}"
+						},
 						"url": {
-							"raw": "{{host}}/drinks",
+							"raw": "http://127.0.0.1:5000/drinks",
+							"protocol": "http",
 							"host": [
-								"{{host}}"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"drinks"
 							]
@@ -303,10 +348,15 @@
 						"method": "PATCH",
 						"header": [],
 						"url": {
-							"raw": "{{host}}/drinks/1",
+							"raw": "http://127.0.0.1:5000/drinks/1",
+							"protocol": "http",
 							"host": [
-								"{{host}}"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"drinks",
 								"1"
@@ -335,10 +385,15 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{host}}/drinks/1",
+							"raw": "http://127.0.0.1:5000/drinks/1",
+							"protocol": "http",
 							"host": [
-								"{{host}}"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"drinks",
 								"1"
@@ -348,16 +403,6 @@
 					"response": []
 				}
 			],
-			"auth": {
-				"type": "bearer",
-				"bearer": [
-					{
-						"key": "token",
-						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik4wTkNOVEEzTWpaQ1FUa3lRMEl6TmtORk0wWXhRVFUwT1RFMFFVVkNSRUpDT1RBME1EUXpOUSJ9.eyJpc3MiOiJodHRwczovL3VkYWNpdHktZnNuZC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDY3MTQ4MTQ0MTcwNjk3MTI4OTMiLCJhdWQiOlsiZGV2IiwiaHR0cHM6Ly91ZGFjaXR5LWZzbmQuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTU2MDg5MDE2MCwiZXhwIjoxNTYwODk3MzYwLCJhenAiOiJPSjVwQk9ZSURFa09FVFVmUWo1ajdsSDZFTFcwMkd1MCIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6ZHJpbmtzIiwiZ2V0OmRyaW5rcy1kZXRhaWwiXX0.j9ocW47_exQOkEa10ffh8eijGvrIMxnGRzCmbrXnfaN_8ULsgA7AnWYMtvP8RmPWvT9n8sReWnFuJajUHBUbnBO2GuJ4aM3-WDUBeJT0X_mpGUWs4lxaNTbIkWdiWPTsEiRnP3wT-dU_v3Olw2PB4UMajMIjSH-IdF2Y1CiJIOaM0gV44RGZRyRvj6C2_mOkMfoXxzw-HrVvTRCo1NcUPea5Bs04POni7azx-B7FstP_HLm0dEbbge4XbmovHwlIXknIoI8PbuGXeLBqE2hv8fErKFBuIykxzK0nErH5zSPCrkM-_9smb8TLGAH-E5j1KQb6SHDKtcV_QHnsUYFuXA",
-						"type": "string"
-					}
-				]
-			},
 			"event": [
 				{
 					"listen": "prerequest",
@@ -379,7 +424,8 @@
 						]
 					}
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "manager",
@@ -409,10 +455,15 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{host}}/drinks",
+							"raw": "http://127.0.0.1:5000/drinks",
+							"protocol": "http",
 							"host": [
-								"{{host}}"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"drinks"
 							]
@@ -442,13 +493,28 @@
 						}
 					],
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlJ4MnRCdnd5T2ZNRUdnRVlwX3VoRSJ9.eyJpc3MiOiJodHRwczovL3NoYWxpbmktZnNuZC5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWU5YjMxMTZkZTQzMWEwYzhkNjNmZDQ2IiwiYXVkIjoiQ29mZmVlU2hvcEFwcCIsImlhdCI6MTU4NzQwODIyOSwiZXhwIjoxNTg3NDE1NDI5LCJhenAiOiJVcXM2ZGJKS3ZYenk3VnMzaW1VcFhzcnhoWmMzMUQ5MCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmRyaW5rcyIsImdldDpkcmlua3MtZGV0YWlsIiwicGF0Y2g6ZHJpbmtzIiwicG9zdDpkcmlua3MiXX0.Gim9m5wsxboIrykYkzBcCb7tOTIU9uTB6Hbfx06pzIL9TBW-DMwwiZvm3dqxiy9Kp78-DwB3ooE-2elna3i9dJ6nGgJQV2LGfwvDspFWBS2W6KJVhJtI0i01ztbO-hWmlrxz5XjFCvc5msJdkA4Q2tM7PWkVRZqRV0f1Hls3rntZAGvsJaQO8Da_AXnIBuJGwBCzAsDqg1eB2B7KJ3iST9ZHJFDfepGsR9TdTeK4b42nAPfzIfLzvvynfZSzjS1LQor90RG3RB-tlDqnBvhrx5RD3p27k537Xgx3Bs12rQ_0EYv_89Dk6nEt96uE_qbYsZ0zHGQ2ALBfGjXkxxVSog",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{host}}/drinks-detail",
+							"raw": "http://127.0.0.1:5000/drinks-detail",
+							"protocol": "http",
 							"host": [
-								"{{host}}"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"drinks-detail"
 							]
@@ -473,6 +539,16 @@
 						}
 					],
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlJ4MnRCdnd5T2ZNRUdnRVlwX3VoRSJ9.eyJpc3MiOiJodHRwczovL3NoYWxpbmktZnNuZC5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWU5YjMxMTZkZTQzMWEwYzhkNjNmZDQ2IiwiYXVkIjoiQ29mZmVlU2hvcEFwcCIsImlhdCI6MTU4NzQwODIyOSwiZXhwIjoxNTg3NDE1NDI5LCJhenAiOiJVcXM2ZGJKS3ZYenk3VnMzaW1VcFhzcnhoWmMzMUQ5MCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmRyaW5rcyIsImdldDpkcmlua3MtZGV0YWlsIiwicGF0Y2g6ZHJpbmtzIiwicG9zdDpkcmlua3MiXX0.Gim9m5wsxboIrykYkzBcCb7tOTIU9uTB6Hbfx06pzIL9TBW-DMwwiZvm3dqxiy9Kp78-DwB3ooE-2elna3i9dJ6nGgJQV2LGfwvDspFWBS2W6KJVhJtI0i01ztbO-hWmlrxz5XjFCvc5msJdkA4Q2tM7PWkVRZqRV0f1Hls3rntZAGvsJaQO8Da_AXnIBuJGwBCzAsDqg1eB2B7KJ3iST9ZHJFDfepGsR9TdTeK4b42nAPfzIfLzvvynfZSzjS1LQor90RG3RB-tlDqnBvhrx5RD3p27k537Xgx3Bs12rQ_0EYv_89Dk6nEt96uE_qbYsZ0zHGQ2ALBfGjXkxxVSog",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [
 							{
@@ -484,13 +560,18 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"title\": \"Water3\",\n    \"recipe\": {\n        \"name\": \"Water\",\n        \"color\": \"blue\",\n        \"parts\": 1\n    }\n}"
+							"raw": "{\n    \"title\": \"Water-X\",\n    \"recipe\": [{\n        \"name\": \"Water-X\",\n        \"color\": \"Blue\",\n        \"parts\": 1\n    }]\n}"
 						},
 						"url": {
-							"raw": "{{host}}/drinks",
+							"raw": "http://127.0.0.1:5000/drinks",
+							"protocol": "http",
 							"host": [
-								"{{host}}"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"drinks"
 							]
@@ -520,6 +601,16 @@
 						}
 					],
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlJ4MnRCdnd5T2ZNRUdnRVlwX3VoRSJ9.eyJpc3MiOiJodHRwczovL3NoYWxpbmktZnNuZC5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWU5YjMxMTZkZTQzMWEwYzhkNjNmZDQ2IiwiYXVkIjoiQ29mZmVlU2hvcEFwcCIsImlhdCI6MTU4NzQwODIyOSwiZXhwIjoxNTg3NDE1NDI5LCJhenAiOiJVcXM2ZGJKS3ZYenk3VnMzaW1VcFhzcnhoWmMzMUQ5MCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmRyaW5rcyIsImdldDpkcmlua3MtZGV0YWlsIiwicGF0Y2g6ZHJpbmtzIiwicG9zdDpkcmlua3MiXX0.Gim9m5wsxboIrykYkzBcCb7tOTIU9uTB6Hbfx06pzIL9TBW-DMwwiZvm3dqxiy9Kp78-DwB3ooE-2elna3i9dJ6nGgJQV2LGfwvDspFWBS2W6KJVhJtI0i01ztbO-hWmlrxz5XjFCvc5msJdkA4Q2tM7PWkVRZqRV0f1Hls3rntZAGvsJaQO8Da_AXnIBuJGwBCzAsDqg1eB2B7KJ3iST9ZHJFDfepGsR9TdTeK4b42nAPfzIfLzvvynfZSzjS1LQor90RG3RB-tlDqnBvhrx5RD3p27k537Xgx3Bs12rQ_0EYv_89Dk6nEt96uE_qbYsZ0zHGQ2ALBfGjXkxxVSog",
+									"type": "string"
+								}
+							]
+						},
 						"method": "PATCH",
 						"header": [
 							{
@@ -531,16 +622,21 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"title\": \"Water5\"\n}"
+							"raw": "{\n    \"title\": \"Water-Mineral\",\n    \"recipe\": [{\n        \"name\": \"Water-M\",\n        \"color\": \"purple\",\n        \"parts\": 1\n    }]\n}"
 						},
 						"url": {
-							"raw": "{{host}}/drinks/1",
+							"raw": "http://127.0.0.1:5000/drinks/3",
+							"protocol": "http",
 							"host": [
-								"{{host}}"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"drinks",
-								"1"
+								"3"
 							]
 						}
 					},
@@ -563,32 +659,41 @@
 						}
 					],
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlJ4MnRCdnd5T2ZNRUdnRVlwX3VoRSJ9.eyJpc3MiOiJodHRwczovL3NoYWxpbmktZnNuZC5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWU5YjMxMTZkZTQzMWEwYzhkNjNmZDQ2IiwiYXVkIjoiQ29mZmVlU2hvcEFwcCIsImlhdCI6MTU4NzQwODIyOSwiZXhwIjoxNTg3NDE1NDI5LCJhenAiOiJVcXM2ZGJKS3ZYenk3VnMzaW1VcFhzcnhoWmMzMUQ5MCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmRyaW5rcyIsImdldDpkcmlua3MtZGV0YWlsIiwicGF0Y2g6ZHJpbmtzIiwicG9zdDpkcmlua3MiXX0.Gim9m5wsxboIrykYkzBcCb7tOTIU9uTB6Hbfx06pzIL9TBW-DMwwiZvm3dqxiy9Kp78-DwB3ooE-2elna3i9dJ6nGgJQV2LGfwvDspFWBS2W6KJVhJtI0i01ztbO-hWmlrxz5XjFCvc5msJdkA4Q2tM7PWkVRZqRV0f1Hls3rntZAGvsJaQO8Da_AXnIBuJGwBCzAsDqg1eB2B7KJ3iST9ZHJFDfepGsR9TdTeK4b42nAPfzIfLzvvynfZSzjS1LQor90RG3RB-tlDqnBvhrx5RD3p27k537Xgx3Bs12rQ_0EYv_89Dk6nEt96uE_qbYsZ0zHGQ2ALBfGjXkxxVSog",
+									"type": "string"
+								}
+							]
+						},
 						"method": "DELETE",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
-							"raw": "{{host}}/drinks/1",
+							"raw": "http://127.0.0.1:5000/drinks/5",
+							"protocol": "http",
 							"host": [
-								"{{host}}"
+								"127",
+								"0",
+								"0",
+								"1"
 							],
+							"port": "5000",
 							"path": [
 								"drinks",
-								"1"
+								"5"
 							]
 						}
 					},
 					"response": []
 				}
 			],
-			"auth": {
-				"type": "bearer",
-				"bearer": [
-					{
-						"key": "token",
-						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik4wTkNOVEEzTWpaQ1FUa3lRMEl6TmtORk0wWXhRVFUwT1RFMFFVVkNSRUpDT1RBME1EUXpOUSJ9.eyJpc3MiOiJodHRwczovL3VkYWNpdHktZnNuZC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDY3MTQ4MTQ0MTcwNjk3MTI4OTMiLCJhdWQiOlsiZGV2IiwiaHR0cHM6Ly91ZGFjaXR5LWZzbmQuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTU2MDg4OTU5NiwiZXhwIjoxNTYwODk2Nzk2LCJhenAiOiJPSjVwQk9ZSURFa09FVFVmUWo1ajdsSDZFTFcwMkd1MCIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6ZHJpbmtzIiwiZ2V0OmRyaW5rcyIsImdldDpkcmlua3MtZGV0YWlsIiwicGF0Y2g6ZHJpbmtzIiwicG9zdDpkcmlua3MiXX0.Qk-5FC2X_RUkK00WKARYCKw_877XFuaT5ND3f3ObD9Ly1e1GMfJXhi3McV12binGGCw6x241erIjGB0t8WbWdU3bYpIVD1klZ64DVLQ8Q2LQ2NzB3eFEOgGLL85az1jIDbRiuATIRbbBOWILPJ6h6KR9L5hExklf2zuj3Bnwm7zMRmVpIJmjrUt4bWjtTOguOwJ0IVQsk4PDjGxzwfrUWFCFNDqN_u15JNLxeH21C-QvCpHs3D4Aodeh1qFUuWHfK_Gyfu91AitXPTVZRX9eZbUOVkGT3JMn4sKn9oGaKFTx2E-Y4DmoECG0uWImbX_wiRjx4aTeo7Q7hKSReMToPA",
-						"type": "string"
-					}
-				]
-			},
 			"event": [
 				{
 					"listen": "prerequest",
@@ -610,7 +715,8 @@
 						]
 					}
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		}
 	],
 	"event": [
@@ -642,5 +748,6 @@
 			"value": "localhost:5000",
 			"type": "string"
 		}
-	]
+	],
+	"protocolProfileBehavior": {}
 }
