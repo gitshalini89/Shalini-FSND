@@ -82,16 +82,15 @@ def update_drinks(*args, **kwargs):
             abort(404)
         
         body = request.get_json()
-        new_title = body.get('title', None)
-        new_recipe = body.get('recipe', None)
 
-        drink=Drink(id=u_id, title=new_title, recipe=json.dumps(new_recipe))
-
+        drink.title = body.get('title', None)
+        drink.recipe = json.dumps(body.get('recipe',None))
         drink.update()
 
-        return jsonify({
+        return jsonify ({
             "success": True,
-            "drinks": [drink.long()]
+            "drinks": [drink.long()], 
+            "modified_drink_id" : u_id
         })
 
     except AttributeError:
